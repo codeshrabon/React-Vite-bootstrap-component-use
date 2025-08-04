@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Home from './Components/Home.jsx';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Expriment from './Components/Expriment.jsx';
+import Experiment from './Components/Experiment.jsx';
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
         
         
         </Route>
-        <Route path='/expriment' element={<Expriment />}>
+        <Route path='/experiment' element={<Experiment />}>
         </Route>
       </Routes>
       </BrowserRouter>
