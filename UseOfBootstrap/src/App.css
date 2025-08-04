@@ -2,6 +2,10 @@
   max-width: 1280px;
   margin: auto;
   padding: 1rem;
+  border: 4rem;
+  border-style: calc(2);
+  border-color: black;
+  box-shadow: 4rem;
   text-align: left;
 } */
 
