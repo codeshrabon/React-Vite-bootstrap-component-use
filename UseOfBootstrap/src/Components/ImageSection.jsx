@@ -1,14 +1,23 @@
+import React from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
 function ImageSection(){
 
+    // object call of useNavigate
+    const navigate = useNavigate()
+    // create function to give direction 
+    const redirectToBack = () => {
+        navigate("/")
+    }
     return (
         
 
         <div className="container">
-            <div></div>
+            <button type="button" onClick={redirectToBack} class="btn btn-outline-primary">Back</button>
             <div className="name bg-primary rounded text text-center text-white mt-5 mb-3 p-3">
+                
                 <div className=" ">
                 <h5 
                 className="col col-2 rounded border border-black  p-1">

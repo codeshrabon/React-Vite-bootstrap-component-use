@@ -7,8 +7,8 @@ import Home from './Components/Home.jsx';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Experiment from './Components/Experiment.jsx';
-import ImageSection from './Components/ImageSection.jsx';
-<link rel="stylesheet" href="style.css" />
+import ImageShapeSection from './Components/ImageSection.jsx';
+import TextFeatures from './Components/TextFeatures.jsx';
 
 
 function App() {
@@ -23,8 +23,10 @@ function App() {
         </Route>
         <Route path='/experiment' element={<Experiment />}>
         </Route>
-        <Route path='/imagesection' element = {<ImageSection />}>
+        <Route path='/image' element = {<ImageShapeSection />}>
 
+        </Route>
+        <Route path='/textFeatures' element= {<TextFeatures />}>
         </Route>
       </Routes>
       </BrowserRouter>
