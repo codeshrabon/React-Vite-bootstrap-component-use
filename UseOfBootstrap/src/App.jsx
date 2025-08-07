@@ -7,6 +7,8 @@ import Home from './Components/Home.jsx';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Experiment from './Components/Experiment.jsx';
+import ImageSection from './Components/ImageSection.jsx';
+<link rel="stylesheet" href="style.css" />
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
         
         </Route>
         <Route path='/experiment' element={<Experiment />}>
+        </Route>
+        <Route path='/imagesection' element = {<ImageSection />}>
+
         </Route>
       </Routes>
       </BrowserRouter>
